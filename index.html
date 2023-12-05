@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local&session storages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="choose-db">
+        <h1>Выберите хранилише:</h1>
+        <select class="choosed-db" id="storage">
+            <option value="sessionStorage">sessionStorage</option>
+            <option value="localStorage">localStorage</option>
+        </select>
+    </section>
+    <section class="input-data">
+        <input id="key" type="text" placeholder="ключ">
+        <input id="value" type="text" placeholder="текст">
+        <button id="addData">добавить</button>
+    </section>
+    <table id="table">
+        <thead>
+            <th>keys</th>
+            <th>values</th>
+            <th id="clearAll">✖️</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
